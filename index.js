@@ -16,6 +16,7 @@ class UserService {
   authUser(username, password) {
     return new Promise((resolve, reject) => { 
       if(account[username] !== password) {
+        console.log('login error')
         reject(1)
       }
       resolve('success')
@@ -69,14 +70,15 @@ class UserService {
     })
   }
   async auth(login, password) {
-    console.log(login, "--", password)
+    const date = new Date()
+    console.log(date.toLocaleString(), login, "--", password)
     try {
       const admin = this.userMap.get('admin')
       if (login == admin.login && password == admin.password) {
         return admin
       }
-      const a = await this.authUser(login, password)
-      console.log(a)
+      await this.authUser(login, password)
+      console.log('login success')
       const user = {
         login,
         password,
