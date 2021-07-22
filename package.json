@@ -1,0 +1,20 @@
+{
+  "name": "cnpm-agora-user-service",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxueyong123/private-npm-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuxueyong123/private-npm-auth/issues"
+  },
+  "homepage": "https://github.com/liuxueyong123/private-npm-auth#readme"
+}
